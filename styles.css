@@ -11,7 +11,7 @@
   --color-accent-soft: #dceae7;
   --color-focus: #9d5e2e;
   --color-shadow: rgba(45, 41, 38, 0.08);
-  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
   --radius-sm: 0.75rem;
   --radius-md: 1rem;
   --radius-lg: 1.5rem;
@@ -47,6 +47,7 @@ body {
     radial-gradient(circle at top left, rgba(255, 255, 255, 0.65), transparent 26rem),
     linear-gradient(180deg, #fbf7f1 0%, var(--color-background) 100%);
   line-height: 1.6;
+  letter-spacing: 0.01em;
 }
 
 img {
@@ -80,21 +81,6 @@ button {
   outline-offset: 3px;
 }
 
-.skip-link {
-  position: absolute;
-  top: -3rem;
-  left: var(--space-4);
-  z-index: 1000;
-  padding: var(--space-3) var(--space-4);
-  border-radius: var(--radius-sm);
-  background: var(--color-text);
-  color: #fff;
-}
-
-.skip-link:focus {
-  top: var(--space-4);
-}
-
 .container {
   width: min(calc(100% - 2rem), var(--max-width));
   margin: 0 auto;
@@ -109,7 +95,7 @@ button {
 }
 
 .section-accent {
-  background: linear-gradient(180deg, rgba(220, 234, 231, 0.7), rgba(255, 255, 255, 0));
+  background: linear-gradient(145deg, var(--color-surface-muted), var(--color-background));
 }
 
 .section-heading {
@@ -134,19 +120,21 @@ h1,
 h2,
 h3 {
   margin: 0 0 var(--space-3);
-  line-height: 1.15;
 }
 
 h1 {
-  font-size: clamp(2.1rem, 5vw, 4rem);
+  font-size: clamp(2.1rem, 5vw, 3.2rem);
+  line-height: 1.2;
 }
 
 h2 {
-  font-size: clamp(1.7rem, 4vw, 2.6rem);
+  font-size: clamp(1.7rem, 4vw, 2rem);
+  line-height: 1.25;
 }
 
 h3 {
   font-size: 1.2rem;
+  line-height: 1.15;
 }
 
 p {
@@ -187,8 +175,8 @@ ol {
 
 .brand-name,
 .footer-brand {
-  font-size: 1.1rem;
-  font-weight: 800;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .brand-tag {
@@ -252,9 +240,9 @@ ol {
   align-items: center;
   justify-content: center;
   min-height: 3rem;
-  padding: 0.9rem 1.25rem;
+  padding: 0.5rem 1rem;
   border: 1px solid transparent;
-  border-radius: 999px;
+  border-radius: 20px;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -308,6 +296,7 @@ ol {
 .hero-text {
   max-width: 38rem;
   font-size: 1.05rem;
+  line-height: 1.9rem;
 }
 
 .hero-actions {
@@ -348,6 +337,10 @@ ol {
 .process-card,
 .gallery-card {
   padding: var(--space-5);
+}
+
+.hero-card-inner h2 {
+  font-weight: 600;
 }
 
 .card-label {
@@ -401,7 +394,11 @@ ol {
 
 .process-card {
   position: relative;
-  padding-top: calc(var(--space-5) + 1.5rem);
+  padding-top: var(--space-5);
+}
+
+.process-card h3 {
+  margin-left: 36px;
 }
 
 .process-step {
@@ -508,7 +505,7 @@ ol {
   }
 
   .hero-actions .button {
-    min-width: 13rem;
+    min-width: 8rem;
   }
 
   .services-grid,
