@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Lemke Home Services favicon</title>
+  <desc id="desc">A rounded square badge with a stylized home outline and an L-shaped door.</desc>
+  <rect width="64" height="64" rx="16" fill="#f7f2ea"/>
+  <path
+    d="M14 30 32 16l18 14"
+    fill="none"
+    stroke="#2f5854"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="5"
+  />
+  <path
+    d="M20 28v20h24V28"
+    fill="none"
+    stroke="#3f6f6a"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="5"
+  />
+  <path
+    d="M28 28v14h10"
+    fill="none"
+    stroke="#9d5e2e"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="5"
+  />
+</svg>
