@@ -1,7 +1,5 @@
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
-const quoteForm = document.querySelector("#quote-form");
-const formMessage = document.querySelector("#form-message");
 const currentYear = document.querySelector("#current-year");
 
 if (currentYear) {
@@ -27,13 +25,5 @@ if (navToggle && siteNav) {
       navToggle.setAttribute("aria-label", "Open navigation");
       siteNav.classList.remove("is-open");
     });
-  });
-}
-
-if (quoteForm && formMessage) {
-  quoteForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    formMessage.textContent =
-      "Thanks for reaching out. This form is a placeholder for now and does not send yet.";
   });
 }
