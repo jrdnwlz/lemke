@@ -566,6 +566,7 @@ ol {
 }
 
 .form-field input,
+.form-field select,
 .form-field textarea {
   width: 100%;
   padding: 0.9rem 1rem;

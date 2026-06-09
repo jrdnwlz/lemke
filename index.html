@@ -401,6 +401,28 @@
           </div>
 
           <div class="form-field">
+            <label for="contact-preference">Preferred Contact Method</label>
+            <select id="contact-preference" name="contact_preference" required>
+              <option value="">Select one</option>
+              <option value="Call Me">Call Me</option>
+              <option value="Text Me">Text Me</option>
+              <option value="Email Me">Email Me</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="service-address">Service Address</label>
+            <input
+              id="service-address"
+              name="service_address"
+              type="text"
+              autocomplete="street-address"
+              minlength="8"
+              required
+            >
+          </div>
+
+          <div class="form-field">
             <label for="project-details">What do you need help with?</label>
             <textarea id="project-details" name="message" rows="5" required></textarea>
           </div>
